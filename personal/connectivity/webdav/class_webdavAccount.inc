@@ -220,7 +220,7 @@ class webdavAccount extends plugin
 
   function init_multiple_support($attrs,$all)
   {
-    plugin::__constructit_multiple_support($attrs,$all);
+    plugin::init_multiple_support($attrs,$all);
     if(isset($attrs['objectClass']) && in_array_strict("gosaWebDAVAccount",$attrs['objectClass'])){
       $this->is_account = TRUE;
     }
